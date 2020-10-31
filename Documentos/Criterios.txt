@@ -1,0 +1,16 @@
+4 tipos de Cerveja: 
+Weiss: trigo, coloração clara, típico do sul da Alemanha,sobresai o sabor de trigo com banana,maça,cravo e florias, entre 5 e 6% de teor alcoolico, combinam com queijos,carnes curadas,salsichas e presuntos.
+Blond Ale: malte, coloração amarelo claro a dourado profundo na cor,típico norte-americano, interessante notas de frutas, lúpulo e herbáceas, entre 5 e 7% de teor alcoolico, combinam com carne assada,carpaccio, coelho e alguns embutidos.
+Ipa Cacau: frutas citricas, colocaração amarelo escuro,típico norte-americano, combinação de frutas citricas e cacau, entre 6 e 7% de teor alcoolico, combinam com carnes vermelhas, hamburguers, culinaria mexicana e comidas mais apimentadas.
+Oatmeal Stout:café,coloração preta,típico Irlandes,gosto forte(amargo),combinação de café e malte,entre 4 e 6% de teor alcoolico,combinam com frutos do mar,guisado de carne, queijos fortes,salgados e sobremesas feitas com chocolate.
+
+Critérios:
+
+Coloração.(3 tons) -Claro: Weiss - Médio: Blond e Ipa - Escuro: Stout
+Região.(3 Regiões) -Alemanha: Weiss -EUA: Blond e Ipa - Irlanda: Stout
+Teor Alcoolico.(3 Níveis) -Menor: Stout -Médio: Weiss e Blond -Maior: Ipa
+Sabor Sobresaente.(3 Tipos) -Amargo: Stout -Ácido: Blond e Ipa -Suave: Weiss
+Combinação de Comidas.(4 Tipos) -Aperitivos:Weiss e Stout -Carnes:Todos -Sobremesa:Stout -Saladas em geral: Ipa
+
+Sistema de nota, 1 ponto para cada escolha, escolha que tiver maior pontuação é a sugerida.
+Em caso de empate será sugerido ambas.
