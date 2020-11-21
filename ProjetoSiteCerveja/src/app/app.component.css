@@ -148,3 +148,48 @@ footer {
 #equipe {
   padding-top: 80px;
 }
+
+#footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  background-color: #bf7a26;
+}
+
+#footer .credits {
+  text-align: center;
+  font-size: 13px;
+  color: white;
+}
+
+#footer .credits a {
+  color: white;
+}
+
+#footer .credits a:hover {
+  color: white;
+}
+
+h6 {
+  margin-bottom: 0;
+}
+
+li {
+  color: white;
+}
+
+li a {
+  color: white;
+}
+
+#contato p {
+  color: white;
+}
+
+.copyright p {
+  color: white;
+}
