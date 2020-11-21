@@ -63,15 +63,15 @@ header.headermain {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(
-    to bottom,
-    rgba(92, 77, 66, 0.8) 0%,
-    rgba(92, 77, 66, 0.8) 100%
-  );
-  /*    url("src/assets/img/entradamaua.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;*/
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("src/assets/images/header.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 header.headermain h1 {
   font-size: 2.25rem;
@@ -97,9 +97,9 @@ header.headermain h1 {
   }
 }
 
-.logo {
-  width: 200px;
-  height: 100px;
+#logo {
+  width: 50%;
+  height: 50%;
 }
 
 p {
@@ -124,4 +124,27 @@ footer {
   color: #fff;
   background-color: #bf7a26;
   border-color: #bf7a26;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #bf7a2685;
+  border-color: #bf7a26;
+}
+
+.pb-3,
+.py-3 {
+  padding-bottom: 0rem !important;
+}
+
+.pt-3,
+.py-3 {
+  padding-top: 0rem !important;
+}
+
+#sobre,
+#cervejas,
+#sugestoes,
+#equipe {
+  padding-top: 80px;
 }

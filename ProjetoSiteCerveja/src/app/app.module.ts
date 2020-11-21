@@ -7,6 +7,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { CervejasComponent } from './cervejas/cervejas.component';
 import { SugestoesComponent } from './sugestoes/sugestoes.component';
 import { EquipeComponent } from './equipe/equipe.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EquipeComponent } from './equipe/equipe.component';
     EquipeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
