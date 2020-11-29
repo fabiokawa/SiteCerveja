@@ -132,6 +132,12 @@ footer {
   border-color: #bf7a26;
 }
 
+.btn-primary:focus {
+  color: #fff;
+  background-color: #bf7a26;
+  border-color: #bf7a26;
+}
+
 .pb-3,
 .py-3 {
   padding-bottom: 0rem !important;
@@ -147,6 +153,10 @@ footer {
 #sugestoes,
 #equipe {
   padding-top: 80px;
+}
+
+#equipe {
+  padding-bottom: 80px;
 }
 
 #footer {
@@ -192,4 +202,8 @@ li a {
 
 .copyright p {
   color: white;
+}
+
+.modal.show {
+  display: block;
 }

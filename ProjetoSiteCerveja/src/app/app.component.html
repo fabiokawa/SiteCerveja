@@ -71,12 +71,64 @@
               <a class="nav-link js-scroll-trigger" href="#equipe">Equipe</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#login">Login</a>
+              <button type="button" class="btn btn-primary" (click)="showModal=true" data-toggle="modal" data-target="#myModal">
+                Login
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- Login -->
+    <div class="modal" id="myModal" [ngClass]="{'show':showModal}">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title"><strong>Login</strong></h4>
+            <button type="button" class="close" (click)="showModal=false" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <!-- Form -->
+            <form class="text-center" style="color: #757575;">
+                
+              <!-- Email -->
+              <div class="md-form">
+                <input type="email" id="materialLoginFormEmail" class="form-control" mdbInput>
+                <label for="materialLoginFormEmail">E-mail</label>
+              </div>
+        
+              <!-- Password -->
+              <div class="md-form">
+                <input type="password" id="materialLoginFormPassword" class="form-control" mdbInput>
+                <label for="materialLoginFormPassword">Senha</label>
+              </div>
+        
+              <div class="d-flex justify-content-around">
+                <div>
+                  <!-- Forgot password -->
+                  <a href="">Esqueceu a senha?</a>
+                </div>
+              </div>
+        
+              <!-- Sign in button -->
+              <button mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0" mdbWavesEffect
+                type="submit">Login</button>
+        
+              <!-- Register -->
+              <p>Não é um membro?
+                <a href="">Registre-se</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Header -->
     <header class="headermain" id="header">
       <div class="container h-100">
@@ -98,21 +150,28 @@
         </div>
       </div>
     </header>
-    <section>
-      <app-tela-login></app-tela-login>
-    </section>
+
+    <!-- Sobre -->
     <section id="sobre">
       <app-sobre></app-sobre>
     </section>
+
+    <!-- Cervejas -->
     <section id="cervejas">
       <app-cervejas></app-cervejas>
     </section>
+
+    <!-- Sugestões -->
     <section id="sugestoes">
       <app-sugestoes></app-sugestoes>
     </section>
+
+    <!-- Equipe -->
     <section id="equipe">
       <app-equipe></app-equipe>
-    </section> 
+    </section>
+
+    <!-- Footer -->
     <footer id="footer">
       <div class="footer-top">
         <div class="container">
@@ -121,7 +180,7 @@
             <div class="col-md-2 col-md-4 footer-info">
               <h3>Bier 2 Bier</h3>
               <div class="logo float-left">
-                <a href="#myCarousel" class="scrollto"><img src="../assets/images/logo3.png" alt="" class="img-fluid"></a>
+                <a href="#header" class="scrollto"><img src="../assets/images/logo3.png" alt="" class="img-fluid"></a>
               </div>
             </div>
   
@@ -154,7 +213,7 @@
               <!--
               <div class="social-links">
                 <a href="https://twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.facebook.com.br/bogacorretora/" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com.br" class="facebook"><i class="fa fa-facebook"></i></a>
                 <a href="https://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
               </div>
@@ -162,13 +221,11 @@
               
   
             </div>
-  
-  
-  
           </div>
         </div>
       </div>
-  
+
+      <!-- Créditos -->
       <div class="container">
         <div class="copyright">
           <p>
@@ -178,7 +235,7 @@
         <div class="credits">
           <h6>Desenvolvido por <a href="https://www.linkedin.com/in/andr%C3%A9-leocadio-melo-chioratto-920036152/">
               André/</a>
-            <a href="http://linkedin.com/in/fábio-kawasaki-1a642b180">Fabio/</a>
+            <a href="http://linkedin.com/in/fábio-kawasaki-1a642b180">Fábio/</a>
             <a href="https://github.com/DanielSasaki">Daniel</a>
           </h6>
         </div>

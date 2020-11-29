@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Bier 2 Bier';
+  showModal = false;
 
   stylesBotao() {
     return {
@@ -21,4 +22,5 @@ export class AppComponent {
   obterClassesRodape() {
     return ['rodape'];
   }
+
 }
