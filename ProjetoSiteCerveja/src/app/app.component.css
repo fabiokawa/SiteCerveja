@@ -120,21 +120,15 @@ footer {
   text-align: center;
 }
 
-.btn-primary {
+.btn {
   color: #fff;
   background-color: #bf7a26;
   border-color: #bf7a26;
 }
 
-.btn-primary:hover {
+.btn:hover {
   color: #fff;
   background-color: #bf7a2685;
-  border-color: #bf7a26;
-}
-
-.btn-primary:focus {
-  color: #fff;
-  background-color: #bf7a26;
   border-color: #bf7a26;
 }
 

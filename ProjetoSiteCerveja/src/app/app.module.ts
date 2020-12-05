@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
@@ -20,7 +22,9 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
   ],
   imports: [
     BrowserModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
