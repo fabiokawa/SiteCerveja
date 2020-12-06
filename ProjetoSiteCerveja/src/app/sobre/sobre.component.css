@@ -1,0 +1,12 @@
+h4 {
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  color: #bf7a26;
+}
+
+#imagem {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

@@ -1,0 +1,19 @@
+h1,
+b {
+  color: #bf7a26;
+}
+
+h1,
+h2,
+article,
+div {
+  padding-left: 10px;
+}
+
+p {
+  padding-left: 20px;
+}
+
+body {
+  background-color: #f5deb3;
+}

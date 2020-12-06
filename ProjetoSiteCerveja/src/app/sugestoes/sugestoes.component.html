@@ -1,1 +1,119 @@
-<h1>DATA SCIENCE</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Form de exemplo com radios</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Sugestão de cerveja</h1>
+        <h2>Qual das seguintes opções é a mais importante na hora de escolher uma cerveja?</h2>
+        
+        
+        <div class="radio">  
+            <label>  
+                <input type="radio" name="opcao" value="Coloração" (click)="setradio('Coloração')" [checked]='true' ngModel>  
+                Coloração  
+            </label>  
+        </div>  
+        <div class="radio">  
+            <label>  
+                <input type="radio" name="opcao" value="Região" (click)="setradio('Região')" ngModel>  
+                Região  
+            </label>  
+        </div>  
+        <div class="radio">  
+            <label>  
+                <input type="radio" name="opcao" value="Teor" (click)="setradio('Teor')" ngModel>  
+                Teor alcoólico  
+            </label>  
+        </div> 
+        <div class="radio">  
+            <label>  
+                <input type="radio" name="opcao" value="Sabor" (click)="setradio('Sabor')" ngModel>  
+                Sabor sobressalente 
+            </label>  
+        </div> 
+        <div class="radio">  
+            <label>  
+                <input type="radio" name="opcao" value="Comida" (click)="setradio('Comida')" ngModel>  
+                Combinação de comidas  
+            </label>  
+        </div> 
+  
+    <div *ngIf="isSelected('Coloração')" >  
+        <article>
+            <h2><span>Com qual das seguintes colorações você mais se identifica?</span></h2>
+            <div *ngFor="let cor of cores">
+                <input
+                type="radio"
+                name="corCerveja"
+                value="{{cor}}"
+                (change)="radioChangeHandler1($event)">
+                {{cor}}
+            </div>
+        </article>
+        <p><span>De acordo com a sua resposta, a cerveja mais indicada é a </span><b>{{selectedCor}}</b></p>
+   </div>  
+  
+   <div *ngIf="isSelected('Região')">  
+        <article>
+            <h2><span>Com qual das seguintes regiões de origem você mais se identifica?</span></h2>
+            <div *ngFor="let origem of origens">
+                <input
+                type="radio"
+                name="origemCerveja"
+                value="{{origem}}"
+                (change)="radioChangeHandler2($event)">
+                {{origem}}
+            </div>
+        </article>
+        <p><span>De acordo com a sua resposta, a cerveja mais indicada é a </span><b>{{selectedOrigem}}</b></p>
+   </div>
+   
+   <div *ngIf="isSelected('Teor')">
+    <article>
+        <h2><span>Com qual nível de teor alcoólico você mais se identifica?</span></h2>
+        <div *ngFor="let teor of teores">
+            <input
+            type="radio"
+            name="teorCerveja"
+            value="{{teor}}"
+            (change)="radioChangeHandler3($event)">
+            {{teor}}
+        </div>
+    </article>
+    <p><span>De acordo com a sua resposta, a cerveja mais indicada é a </span><b>{{selectedTeor}}</b></p>
+   </div>
+
+   <div *ngIf="isSelected('Sabor')">
+    <article>
+        <h2><span>Com qual sabor você mais se identifica?</span></h2>
+        <div *ngFor="let sabor of sabores">
+            <input
+            type="radio"
+            name="saborCerveja"
+            value="{{sabor}}"
+            (change)="radioChangeHandler4($event)">
+            {{sabor}}
+        </div>
+    </article>
+    <p><span>De acordo com a sua resposta, a cerveja mais indicada é a </span><b>{{selectedSabor}}</b></p>
+   </div>
+
+   <div *ngIf="isSelected('Comida')">
+    <article>
+        <h2><span>Com qual combinação de comidas você mais se identifica?</span></h2>
+        <div *ngFor="let comida of comidas">
+            <input
+            type="radio"
+            name="comidaCerveja"
+            value="{{comida}}"
+            (change)="radioChangeHandler5($event)">
+            {{comida}}
+        </div>
+    </article>
+    <p><span>De acordo com a sua resposta, a cerveja mais indicada é a </span><b>{{selectedComida}}</b></p>
+   </div>
+
+</body>
+</html>

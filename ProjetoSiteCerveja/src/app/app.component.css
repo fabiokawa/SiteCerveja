@@ -201,3 +201,7 @@ li a {
 .modal.show {
   display: block;
 }
+
+body {
+  background-color: #f5deb3;
+}

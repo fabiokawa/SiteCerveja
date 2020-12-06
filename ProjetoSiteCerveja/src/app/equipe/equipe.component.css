@@ -4,4 +4,22 @@
   min-height: 1px;
   padding: 1.25rem;
   text-align: center;
+  background-color: #bf7a26;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+h1 {
+  padding-left: 10px;
+  color: #bf7a26;
+}
+
+body {
+  background-color: #f5deb3;
 }
